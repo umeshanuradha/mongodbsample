@@ -16,6 +16,7 @@ public class Users {
     private String username;
     private String password;
     private int role;
+    private String address;
 
 
     /**
@@ -90,6 +91,24 @@ public class Users {
         this.role = role;
     }
 
+    /**
+     * Getter for property 'address'.
+     *
+     * @return Value for property 'address'.
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * Setter for property 'address'.
+     *
+     * @param address Value to set for property 'address'.
+     */
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "Users{" +
@@ -97,6 +116,7 @@ public class Users {
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role=" + role +
+                ", address='" + address + '\'' +
                 '}';
     }
 }
