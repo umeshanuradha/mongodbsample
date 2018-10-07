@@ -27,12 +27,18 @@ public class MongoController {
         users.setAddress("xxxx");
         users.setPassword("pwd");
         users.setRole(1);
-        users.setUsername("new User");
+        users.setUsername("user100");
 
         usersRepository.save(users);
 
        return usersRepository.findAll();
 
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/all")
+    public List<Users> getAllData(){
+
+        return usersRepository.findAll();
     }
 
 

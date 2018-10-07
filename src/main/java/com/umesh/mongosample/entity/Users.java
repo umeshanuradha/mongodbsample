@@ -37,20 +37,10 @@ public class Users {
         this.id = id;
     }
 
-    /**
-     * Getter for property 'username'.
-     *
-     * @return Value for property 'username'.
-     */
     public String getUsername() {
         return username;
     }
 
-    /**
-     * Setter for property 'username'.
-     *
-     * @param username Value to set for property 'username'.
-     */
     public void setUsername(String username) {
         this.username = username;
     }
